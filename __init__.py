@@ -1,10 +1,7 @@
 """
-Utility package initialization
+Model package initialization
 """
 
-from .preprocess import ImagePreprocessor
-from .severity import SeverityGrader
-from .recommendations import RecommendationEngine
-from .gemini_ai import GeminiAIEngine, get_gemini_engine
+from .train import PlantDiseaseModel, DISEASE_CLASSES, PLANT_CLASSES
 
-__all__ = ['ImagePreprocessor', 'SeverityGrader', 'RecommendationEngine', 'GeminiAIEngine', 'get_gemini_engine']
+__all__ = ['PlantDiseaseModel']
